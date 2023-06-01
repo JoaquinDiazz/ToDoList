@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+body{
+    background-color: #0b1220;
+}
+.titulo {
+    display: flex;
+    justify-content: center;
+    padding-block: 2em ;
+}
+h1 {
+    color: #e5e5e5;
+    position: relative;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: #fca311;
+    height: 2px;
+    width: 75%;
+}
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1.5em;
+    background-color: #13203b;
+}
+.container form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container button {
+    padding: 9px 10px;
+    cursor: pointer;
+    background-color: #0b1220;
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+.container input {
+    padding: 10px;
+    border: none;
+    background-color: #0b1220;
+    color: #e5e5e5;
+    border-radius: 5px;
+    width: 80%;
+}
+.container input:focus {
+    outline: none;
+}
+.container input::placeholder {
+    color: #e5e5e5;
+}
+.container .tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+    color: #e5e5e5;
+    padding-block: 1em;
+}
+.container .tarea p { 
+    cursor: pointer;
+}
+.container .tarea p.realizada {
+    text-decoration: line-through;
+}
+.container .parrafo {
+    padding-block: 1em;
+    color: #e5e5e5;
+}
+.container .parrafo.disabled {
+    display: none;
+}
+.container .tarea i {
+    color: #fca311;
+    font-size: 17px;
+    cursor: pointer;
+}
+@media screen and (max-width: 740px){
+    .container {
+        width: 90%;
+    }
+}
