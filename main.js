@@ -25,7 +25,18 @@ form.addEventListener("submit", (e) => {
 
         
     } else {
-        alert("holaaa jajjaj")
+        Toastify({
+            text: "Ingrese una tarea",
+            duration: 3000,
+            close: false,
+            gravity: "bottom", // `top` or `bottom`
+            position: "center", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #0b1220, #13203b)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
     }
 })
 
